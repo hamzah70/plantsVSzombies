@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="332.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.createUserController">
+   <children>
+      <ImageView fitHeight="468.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@new_create.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="279.0" fitWidth="294.0" layoutX="146.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/woodenPlank.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="239.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Your Name" />
+      <Text layoutX="253.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create User" />
+      <Text layoutX="272.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Back" />
+      <TextField layoutX="173.0" layoutY="94.0" prefHeight="37.0" prefWidth="225.0" />
+      <Button fx:id="createUserButton" layoutX="173.0" layoutY="139.0" mnemonicParsing="false" onMouseClicked="#createUser" opacity="0.0" prefHeight="27.0" prefWidth="225.0" text="Button" />
+      <Button fx:id="createUserBackButton" layoutX="173.0" layoutY="180.0" mnemonicParsing="false" onMouseClicked="#goBack" opacity="0.0" prefHeight="37.0" prefWidth="231.0" text="Button" />
+   </children>
+</AnchorPane>

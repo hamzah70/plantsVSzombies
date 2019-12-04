@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="387.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.lvl">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="407.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@level_menu.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lvl0" fitHeight="150.0" fitWidth="200.0" layoutX="23.0" layoutY="32.0" onMouseClicked="#levelSelect" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Zombies/normal/zombie_normal.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lvl1" fitHeight="150.0" fitWidth="200.0" layoutX="146.0" layoutY="32.0" onMouseClicked="#levelSelect" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Zombies/conehead/conehead_zombie_moving.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lvl2" fitHeight="150.0" fitWidth="200.0" layoutX="259.0" layoutY="32.0" onMouseClicked="#levelSelect" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Zombies/Footballer/zombie_football.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lvl3" fitHeight="150.0" fitWidth="126.0" layoutX="70.0" layoutY="211.0" onMouseClicked="#levelSelect" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Zombies/Balloon/BalloonZombie.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lvl4" fitHeight="150.0" fitWidth="200.0" layoutX="228.0" layoutY="211.0" onMouseClicked="#levelSelect" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Zombies/FlagZombie/FlagZombie.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

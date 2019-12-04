@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" prefHeight="445.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.lawn">
+   <children>
+      <ImageView fx:id="lawn" fitHeight="444.0" fitWidth="594.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Lawn/mainBG.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lawn3" fitHeight="65.0" fitWidth="58.0" layoutX="-29.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Lawn/lawnmower.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lawn2" fitHeight="65.0" fitWidth="58.0" layoutX="-29.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Lawn/lawnmower.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lawn4" fitHeight="65.0" fitWidth="58.0" layoutX="-29.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Lawn/lawnmower.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lawn5" fitHeight="65.0" fitWidth="58.0" layoutX="-29.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Lawn/lawnmower.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="lawn1" fitHeight="65.0" fitWidth="58.0" layoutX="-29.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Lawn/lawnmower.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="peaShooterToken" fitHeight="56.0" fitWidth="43.0" layoutX="58.0" onMouseClicked="#selectPlant" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Plants/peashooter/peashooter_seed.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="sunflowerToken" fitHeight="56.0" fitWidth="40.0" layoutX="99.0" onMouseClicked="#selectPlant" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Plants/sunflower/sunflower_seed.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="wallnutToken" fitHeight="56.0" fitWidth="41.0" layoutX="139.0" onMouseClicked="#selectPlant" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Plants/wallnut/wallnut_seed.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="potatoToken" fitHeight="56.0" fitWidth="41.0" layoutX="179.0" onMouseClicked="#selectPlant" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Plants/potatomine/potatomine_seed.png" />
+         </image>
+      </ImageView>
+      <!--<ImageView fitHeight="59.0" fitWidth="40.0" layoutX="587.0" layoutY="289.0" pickOnBounds="true" preserveRatio="true">-->
+         <!--<image>-->
+            <!--<Image url="@PvZ_PNGs/Zombies/normal/zombie_normal.gif" />-->
+         <!--</image>-->
+      <!--</ImageView>-->
+      <ImageView fx:id="cherryToken" fitHeight="150.0" fitWidth="41.0" layoutX="220.0" onMouseClicked="#selectPlant" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Plants/cherrybomb/cherrybomb_seed.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="repeaterToken" fitHeight="126.0" fitWidth="41.0" layoutX="261.0" onMouseClicked="#selectPlant" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@PvZ_PNGs/Plants/repeater/repeater_seed.png" />
+         </image>
+      </ImageView>
+      <!--<ImageView fx:id="zombie1" fitHeight="110.0" fitWidth="93.0" layoutX="465.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">-->
+         <!--<image>-->
+            <!--<Image url="@PvZ_PNGs/Zombies/conehead/conehead_zombie_moving.gif" />-->
+         <!--</image>-->
+      <!--</ImageView>-->
+      <!--<ImageView fx:id="zombie2" fitHeight="110.0" fitWidth="93.0" layoutX="465.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">-->
+         <!--<image>-->
+            <!--<Image url="@PvZ_PNGs/Zombies/conehead/conehead_zombie_moving.gif" />-->
+         <!--</image>-->
+      <!--</ImageView>-->
+      <!--<ImageView fx:id="zombie4" fitHeight="110.0" fitWidth="93.0" layoutX="465.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">-->
+         <!--<image>-->
+            <!--<Image url="@PvZ_PNGs/Zombies/conehead/conehead_zombie_moving.gif" />-->
+         <!--</image></ImageView>-->
+      <!--<ImageView fx:id="zombie3" fitHeight="110.0" fitWidth="93.0" layoutX="465.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">-->
+         <!--<image>-->
+            <!--<Image url="@PvZ_PNGs/Zombies/conehead/conehead_zombie_moving.gif" />-->
+         <!--</image>-->
+      <!--</ImageView>-->
+      <!--<ImageView fx:id="zombie5" fitHeight="110.0" fitWidth="93.0" layoutX="465.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">-->
+         <!--<image>-->
+            <!--<Image url="@PvZ_PNGs/Zombies/conehead/conehead_zombie_moving.gif" />-->
+         <!--</image>-->
+      <!--</ImageView>-->
+
+
+      <TilePane fx:id="t00" layoutX="29.0" layoutY="60.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t01" layoutX="78.0" layoutY="60.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t02" layoutX="139.0" layoutY="60.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t03" layoutX="200.0" layoutY="60.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t04" layoutX="261.0" layoutY="60.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t05" layoutX="320.0" layoutY="60.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t06" layoutX="380.0" layoutY="60.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t07" layoutX="440.0" layoutY="60.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+
+
+
+
+      <TilePane fx:id="t10" layoutX="29.0" layoutY="132.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t11" layoutX="78.0" layoutY="132.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t12" layoutX="139.0" layoutY="132.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t13" layoutX="200.0" layoutY="132.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t14" layoutX="261.0" layoutY="132.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t15" layoutX="320.0" layoutY="132.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t16" layoutX="380.0" layoutY="132.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t17" layoutX="440.0" layoutY="132.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+
+
+
+
+      <TilePane fx:id="t20" layoutX="29.0" layoutY="204.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t21" layoutX="78.0" layoutY="204.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t22" layoutX="139.0" layoutY="204.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t23" layoutX="200.0" layoutY="204.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t24" layoutX="261.0" layoutY="204.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t25" layoutX="320.0" layoutY="204.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t26" layoutX="380.0" layoutY="204.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t27" layoutX="440.0" layoutY="204.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+
+
+
+
+      <TilePane fx:id="t30" layoutX="29.0" layoutY="276.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t31" layoutX="78.0" layoutY="276.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t322" layoutX="139.0" layoutY="276.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t33" layoutX="200.0" layoutY="276.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t34" layoutX="261.0" layoutY="276.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t35" layoutX="320.0" layoutY="276.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t36" layoutX="380.0" layoutY="276.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t37" layoutX="440.0" layoutY="276.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+
+
+
+
+      <TilePane fx:id="t40" layoutX="29.0" layoutY="348.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t41" layoutX="78.0" layoutY="348.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t42" layoutX="139.0" layoutY="348.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t43" layoutX="200.0" layoutY="348.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t44" layoutX="261.0" layoutY="348.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t45" layoutX="320.0" layoutY="348.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t46" layoutX="380.0" layoutY="348.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <TilePane fx:id="t47" layoutX="440.0" layoutY="348.0" onMouseClicked="#potPlant" prefHeight="70.0" prefWidth="58.0" />
+      <ImageView fitHeight="67.0" fitWidth="71.0" layoutX="520.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pause1.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="541.0" layoutY="12.0" mnemonicParsing="false" onAction="#pausePress" opacity="0.0" prefHeight="27.0" prefWidth="29.0" text="Pause" />
+      <Label fx:id="sunTokenCount" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="43.0" prefHeight="19.0" prefWidth="41.0" text="100" textAlignment="CENTER" />
+      <ProgressBar fx:id="progressBar" layoutX="338.0" layoutY="-3.0" prefHeight="27.0" prefWidth="163.0" progress="0.0" />
+
+
+
+
+
+
+      <AnchorPane fx:id="pause" disable="true" prefHeight="415.0" prefWidth="580.0" visible="false">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="151.0" layoutX="276.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@res.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="285.0" layoutY="204.0" mnemonicParsing="false" onAction="#resumePress" opacity="0.0" prefHeight="43.0" prefWidth="63.0" text="Resume" />
+            <ImageView fitHeight="70.0" fitWidth="63.0" layoutX="404.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon-exit-15.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="63.0" layoutX="158.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@save.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="exit" layoutX="413.0" layoutY="198.0" mnemonicParsing="false" onAction="#exitPress" opacity="0.0" prefHeight="57.0" prefWidth="44.0" text="Exit Game" />
+            <Button fx:id="save" layoutX="161.0" layoutY="192.0" mnemonicParsing="false" onAction="#savePress" opacity="0.0" prefHeight="63.0" prefWidth="58.0" text="Save Game" />
+         </children>
+      </AnchorPane>
+
+
+
+
+
+       <AnchorPane fx:id="gameWonPage" disable="true" visible="false" prefHeight="445.0" prefWidth="591.0">
+           <children>
+               <Button layoutX="176.0" layoutY="178.0" mnemonicParsing="false" onAction="#nextLevel" prefHeight="123.0" prefWidth="243.0" text="NextLevel" />
+                <Label alignment="CENTER" layoutX="169.0" layoutY="71.0" prefHeight="94.0" prefWidth="254.0" text="Game Won" textAlignment="CENTER">
+                   <font>
+                      <Font name="Arial Black" size="36.0" />
+                   </font>
+                </Label>
+             </children>
+        </AnchorPane>
+
+
+
+
+
+       <AnchorPane fx:id="gameRestartPage" disable="true" visible="false" prefHeight="445.0" prefWidth="591.0">
+           <children>
+               <Button layoutX="176.0" layoutY="178.0" mnemonicParsing="false" onAction="#restartLevel" prefHeight="123.0" prefWidth="243.0" text="RestartLevel" />
+               <Label alignment="CENTER" layoutX="169.0" layoutY="71.0" prefHeight="94.0" prefWidth="254.0" text="Game LOST" textAlignment="CENTER">
+                   <font>
+                       <Font name="Arial Black" size="36.0" />
+                   </font>
+               </Label>
+           </children>
+       </AnchorPane>
+
+
+   </children>
+</AnchorPane>
